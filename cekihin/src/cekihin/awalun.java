@@ -52,16 +52,16 @@ public class awalun extends javax.swing.JFrame {
         warna11Layout.setHorizontalGroup(
             warna11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(warna11Layout.createSequentialGroup()
-                .addGap(286, 286, 286)
+                .addGap(256, 256, 256)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(302, Short.MAX_VALUE))
+                .addContainerGap(332, Short.MAX_VALUE))
         );
         warna11Layout.setVerticalGroup(
             warna11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(warna11Layout.createSequentialGroup()
-                .addGap(124, 124, 124)
+                .addGap(115, 115, 115)
                 .addComponent(jLabel1)
-                .addContainerGap(274, Short.MAX_VALUE))
+                .addContainerGap(283, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
