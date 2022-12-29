@@ -28,6 +28,7 @@ public class awalun extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         warna11 = new image.folder.warna1();
+        jLabel1 = new javax.swing.JLabel();
 
         jPanel1.setBackground(new java.awt.Color(0, 204, 51));
 
@@ -44,15 +45,23 @@ public class awalun extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        jLabel1.setText("y");
+
         javax.swing.GroupLayout warna11Layout = new javax.swing.GroupLayout(warna11);
         warna11.setLayout(warna11Layout);
         warna11Layout.setHorizontalGroup(
             warna11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 625, Short.MAX_VALUE)
+            .addGroup(warna11Layout.createSequentialGroup()
+                .addGap(286, 286, 286)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(302, Short.MAX_VALUE))
         );
         warna11Layout.setVerticalGroup(
             warna11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 414, Short.MAX_VALUE)
+            .addGroup(warna11Layout.createSequentialGroup()
+                .addGap(124, 124, 124)
+                .addComponent(jLabel1)
+                .addContainerGap(274, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -105,6 +114,7 @@ public class awalun extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private image.folder.warna1 warna11;
     // End of variables declaration//GEN-END:variables
