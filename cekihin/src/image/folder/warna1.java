@@ -29,7 +29,7 @@ public class warna1 extends javax.swing.JPanel {
          
        Graphics2D g2 =(Graphics2D)g;
         g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
-        GradientPaint g1 = new GradientPaint(0,0, Color.decode("#6A9113"), 0, getHeight(), Color.decode("#141517"));
+        GradientPaint g1 = new GradientPaint(0,0, Color.decode("#000000"), 0, getHeight(), Color.decode("#434343"));
         g2.setPaint(g1);
         g2.fillRoundRect(0, 0, getWidth(), getHeight(), 15, 15);
         super.paintComponent(g);

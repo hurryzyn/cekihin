@@ -27,8 +27,10 @@ public class awalun extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        warna11 = new image.folder.warna1();
-        jLabel1 = new javax.swing.JLabel();
+        warna12 = new image.folder.warna1();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        mulai = new javax.swing.JButton();
 
         jPanel1.setBackground(new java.awt.Color(0, 204, 51));
 
@@ -45,38 +47,74 @@ public class awalun extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jLabel1.setText("y");
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/folder/pokerx.png"))); // NOI18N
+        jLabel3.setText("jLabel3");
 
-        javax.swing.GroupLayout warna11Layout = new javax.swing.GroupLayout(warna11);
-        warna11.setLayout(warna11Layout);
-        warna11Layout.setHorizontalGroup(
-            warna11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(warna11Layout.createSequentialGroup()
-                .addGap(256, 256, 256)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(332, Short.MAX_VALUE))
+        jLabel4.setFont(new java.awt.Font("Lucida Fax", 0, 36)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel4.setText("CEKIHIN");
+
+        mulai.setBackground(new java.awt.Color(153, 0, 51));
+        mulai.setText("Lets Start the game");
+        mulai.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mulaiActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout warna12Layout = new javax.swing.GroupLayout(warna12);
+        warna12.setLayout(warna12Layout);
+        warna12Layout.setHorizontalGroup(
+            warna12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(warna12Layout.createSequentialGroup()
+                .addGroup(warna12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(warna12Layout.createSequentialGroup()
+                        .addGap(249, 249, 249)
+                        .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(warna12Layout.createSequentialGroup()
+                        .addGap(231, 231, 231)
+                        .addComponent(mulai))
+                    .addGroup(warna12Layout.createSequentialGroup()
+                        .addGap(189, 189, 189)
+                        .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 223, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(213, Short.MAX_VALUE))
         );
-        warna11Layout.setVerticalGroup(
-            warna11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(warna11Layout.createSequentialGroup()
-                .addGap(115, 115, 115)
-                .addComponent(jLabel1)
-                .addContainerGap(283, Short.MAX_VALUE))
+        warna12Layout.setVerticalGroup(
+            warna12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(warna12Layout.createSequentialGroup()
+                .addGap(48, 48, 48)
+                .addComponent(jLabel4)
+                .addGap(47, 47, 47)
+                .addComponent(jLabel3)
+                .addGap(65, 65, 65)
+                .addComponent(mulai, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(70, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(warna11, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(warna12, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(warna11, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(warna12, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void mulaiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mulaiActionPerformed
+        // TODO add your handling code here:
+        page2 hv = new page2();
+        hv.setLocationRelativeTo(null);
+             hv.setVisible(true);
+             this.setVisible(false);
+    }//GEN-LAST:event_mulaiActionPerformed
 
     /**
      * @param args the command line arguments
@@ -114,8 +152,10 @@ public class awalun extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JPanel jPanel1;
-    private image.folder.warna1 warna11;
+    private javax.swing.JButton mulai;
+    private image.folder.warna1 warna12;
     // End of variables declaration//GEN-END:variables
 }
